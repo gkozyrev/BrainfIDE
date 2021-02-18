@@ -1,4 +1,4 @@
-# brainfIDE
+# BrainfIDE
 > Simple open source Brainfuck IDE 
 
 ![A little demo](./about/demo-2.gif)

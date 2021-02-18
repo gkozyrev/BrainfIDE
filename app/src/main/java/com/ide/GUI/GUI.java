@@ -1,4 +1,4 @@
-package BrainfIDE.GUI;
+package com.ide.GUI;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -8,7 +8,7 @@ import java.io.*;
 import java.io.FileReader;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import BrainfIDE.Brainfuck.*;
+import com.ide.Brainfuck.*;
 
 public class GUI {
   JFrame frame;

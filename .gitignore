@@ -1,2 +1,4 @@
 brainfIDE.code-workspace
 .DS_Store
+app/.gradle
+app/build

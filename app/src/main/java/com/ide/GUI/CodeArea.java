@@ -1,4 +1,4 @@
-package BrainfIDE.GUI;
+package com.ide.GUI;
 
 public class CodeArea {
     

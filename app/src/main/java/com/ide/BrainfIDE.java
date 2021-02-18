@@ -1,6 +1,6 @@
-package BrainfIDE;
+package com.ide;
 
-import BrainfIDE.GUI.GUI;
+import com.ide.GUI.GUI;
 
 class BrainfIDE {
     public static void main(String[] args) {

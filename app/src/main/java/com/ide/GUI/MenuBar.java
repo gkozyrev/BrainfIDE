@@ -1,4 +1,4 @@
-package BrainfIDE.GUI;
+package com.ide.GUI;
 
 import java.awt.*;
 import javax.swing.*;

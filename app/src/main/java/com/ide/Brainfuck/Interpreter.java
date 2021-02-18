@@ -1,4 +1,4 @@
-package BrainfIDE.Brainfuck;
+package com.ide.Brainfuck;
 
 import java.util.*;
 

@@ -1,0 +1,48 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'io.github.fvarrui:javapackager:1.5.1'
+	}
+}
+
+
+plugins {
+  id 'java'
+  id 'application'
+}
+apply plugin: 'io.github.fvarrui.javapackager.plugin'
+
+repositories {
+    jcenter() 
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.ide.BrainfIDE'
+        )
+    }
+}
+
+application {
+    mainClass = 'com.ide.BrainfIDE' 
+}
+
+javapackager {
+	// common configuration
+	mainClass = 'com.ide.BrainfIDE'
+    name = 'BrainfIDE'
+    organizationName = 'George Kozyrev'
+    organizationEmail = 'work@gkozyrev.ru'
+}
+
+task packageBrainfIDEMacInstaller(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+	platform = 'mac'
+	createTarball = false
+	bundleJre = true
+	generateInstaller = true
+}
+
+task packageBrainfIDE(dependsOn: [ 'packageBrainfIDEMacInstaller' ])
